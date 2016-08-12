@@ -57,5 +57,4 @@ public class MainActivity extends AppCompatActivity {
         pontuacaoTimeA = pontuacaoTimeA + 1;
         mostrarPlacarTimeA(pontuacaoTimeA);
     }
-
 }

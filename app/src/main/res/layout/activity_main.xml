@@ -3,44 +3,97 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     tools:context="br.com.androidpro.baskete.MainActivity">
 
-    <TextView
-        android:id="@+id/timeA"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Time A"
-        android:gravity="center"
-        android:padding="4dp"/>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/placarTimeA"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="0"
-        android:gravity="center"
-        android:padding="4dp" />
+        <TextView
+            android:id="@+id/timeA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Time A"
+            android:gravity="center"
+            android:padding="4dp"/>
 
-    <Button
-        android:id="@+id/tresPontosA"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="+3 PONTOS"
-        android:layout_margin="8dp" />
+        <TextView
+            android:id="@+id/placarTimeA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:gravity="center"
+            android:padding="4dp" />
 
-    <Button
-        android:id="@+id/doisPontosA"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="+2 PONTOS"
-        android:layout_margin="8dp" />
+        <Button
+            android:id="@+id/tresPontosA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+3 PONTOS"
+            android:layout_margin="8dp" />
 
-    <Button
-        android:id="@+id/tiroLivreA"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="TIRO LIVRE"
-        android:layout_margin="8dp" />
+        <Button
+            android:id="@+id/doisPontosA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+2 PONTOS"
+            android:layout_margin="8dp" />
+
+        <Button
+            android:id="@+id/tiroLivreA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TIRO LIVRE"
+            android:layout_margin="8dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/timeB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Time B"
+            android:gravity="center"
+            android:padding="4dp"/>
+
+        <TextView
+            android:id="@+id/placarTimeB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:gravity="center"
+            android:padding="4dp" />
+
+        <Button
+            android:id="@+id/tresPontosB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+3 PONTOS"
+            android:layout_margin="8dp" />
+
+        <Button
+            android:id="@+id/doisPontosB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+2 PONTOS"
+            android:layout_margin="8dp" />
+
+        <Button
+            android:id="@+id/tiroLivreB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TIRO LIVRE"
+            android:layout_margin="8dp" />
+
+    </LinearLayout>
 
 </LinearLayout>
