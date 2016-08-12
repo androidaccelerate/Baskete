@@ -10,6 +10,8 @@ public class MainActivity extends AppCompatActivity {
 
     private int pontuacaoTimeA = 0;
 
+    private int pontuacaoTimeB = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,11 +38,38 @@ public class MainActivity extends AppCompatActivity {
                 addUmPontoTimeA();
             }
         });
+
+        Button botaoTresPontosTimeB = (Button) findViewById(R.id.tresPontosB);
+        botaoTresPontosTimeB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                addTresPontosTimeB();
+            }
+        });
+        Button botaoDoisPontosTimeB = (Button) findViewById(R.id.doisPontosB);
+        botaoDoisPontosTimeB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                addDoisPontosTimeB();
+            }
+        });
+        Button botaoTiroLivreTimeB = (Button) findViewById(R.id.tiroLivreB);
+        botaoTiroLivreTimeB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                addUmPontoTimeB();
+            }
+        });
     }
 
     public void mostrarPlacarTimeA(int pontuacao) {
         TextView placarTimeA = (TextView) findViewById(R.id.placarTimeA);
         placarTimeA.setText(String.valueOf(pontuacao));
+    }
+
+    public void mostrarPlacarTimeB(int pontuacao) {
+        TextView placarTimeB = (TextView) findViewById(R.id.placarTimeB);
+        placarTimeB.setText(String.valueOf(pontuacao));
     }
 
     public void addTresPontosTimeA() {
@@ -56,5 +85,20 @@ public class MainActivity extends AppCompatActivity {
     public void addUmPontoTimeA() {
         pontuacaoTimeA = pontuacaoTimeA + 1;
         mostrarPlacarTimeA(pontuacaoTimeA);
+    }
+
+    public void addTresPontosTimeB() {
+        pontuacaoTimeB = pontuacaoTimeB + 3;
+        mostrarPlacarTimeB(pontuacaoTimeB);
+    }
+
+    public void addDoisPontosTimeB() {
+        pontuacaoTimeB = pontuacaoTimeB + 2;
+        mostrarPlacarTimeB(pontuacaoTimeB);
+    }
+
+    public void addUmPontoTimeB() {
+        pontuacaoTimeB = pontuacaoTimeB + 1;
+        mostrarPlacarTimeB(pontuacaoTimeB);
     }
 }
