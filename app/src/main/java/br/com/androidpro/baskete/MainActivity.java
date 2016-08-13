@@ -60,6 +60,14 @@ public class MainActivity extends AppCompatActivity {
                 addUmPontoTimeB();
             }
         });
+
+        Button botaoReiniciarPartida = (Button) findViewById(R.id.reiniciarPartida);
+        botaoReiniciarPartida.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                reiniciarPartida();
+            }
+        });
     }
 
     public void mostrarPlacarTimeA(int pontuacao) {
@@ -70,6 +78,13 @@ public class MainActivity extends AppCompatActivity {
     public void mostrarPlacarTimeB(int pontuacao) {
         TextView placarTimeB = (TextView) findViewById(R.id.placarTimeB);
         placarTimeB.setText(String.valueOf(pontuacao));
+    }
+
+    public void reiniciarPartida() {
+        pontuacaoTimeA = 0;
+        pontuacaoTimeB = 0;
+        mostrarPlacarTimeA(pontuacaoTimeA);
+        mostrarPlacarTimeB(pontuacaoTimeB);
     }
 
     public void addTresPontosTimeA() {

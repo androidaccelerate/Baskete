@@ -1,99 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
     tools:context="br.com.androidpro.baskete.MainActivity">
 
     <LinearLayout
-        android:layout_weight="1"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/timeA"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Time A"
-            android:gravity="center"
-            android:padding="4dp"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/placarTimeA"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="0"
-            android:gravity="center"
-            android:padding="4dp" />
+            <TextView
+                android:id="@+id/timeA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="Time A" />
 
-        <Button
-            android:id="@+id/tresPontosA"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="+3 PONTOS"
-            android:layout_margin="8dp" />
+            <TextView
+                android:id="@+id/placarTimeA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="0" />
 
-        <Button
-            android:id="@+id/doisPontosA"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="+2 PONTOS"
-            android:layout_margin="8dp" />
+            <Button
+                android:id="@+id/tresPontosA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="+3 PONTOS" />
 
-        <Button
-            android:id="@+id/tiroLivreA"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TIRO LIVRE"
-            android:layout_margin="8dp" />
+            <Button
+                android:id="@+id/doisPontosA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="+2 PONTOS" />
+
+            <Button
+                android:id="@+id/tiroLivreA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="TIRO LIVRE" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/timeB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="Time B" />
+
+            <TextView
+                android:id="@+id/placarTimeB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/tresPontosB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="+3 PONTOS" />
+
+            <Button
+                android:id="@+id/doisPontosB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="+2 PONTOS" />
+
+            <Button
+                android:id="@+id/tiroLivreB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="TIRO LIVRE" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_weight="1"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+    <Button
+        android:id="@+id/reiniciarPartida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reiniciar Partida"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="8dp"/>
 
-        <TextView
-            android:id="@+id/timeB"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Time B"
-            android:gravity="center"
-            android:padding="4dp"/>
-
-        <TextView
-            android:id="@+id/placarTimeB"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="0"
-            android:gravity="center"
-            android:padding="4dp" />
-
-        <Button
-            android:id="@+id/tresPontosB"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="+3 PONTOS"
-            android:layout_margin="8dp" />
-
-        <Button
-            android:id="@+id/doisPontosB"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="+2 PONTOS"
-            android:layout_margin="8dp" />
-
-        <Button
-            android:id="@+id/tiroLivreB"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TIRO LIVRE"
-            android:layout_margin="8dp" />
-
-    </LinearLayout>
-
-</LinearLayout>
+</RelativeLayout>
